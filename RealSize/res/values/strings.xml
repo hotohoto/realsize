@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RealSize</string>
+    
+    <string name="length_result_label">L=</string>
+    <string name="size_result_label">S=</string>
+    <string name="unit_label">U=</string>
+    
+    <string name="adjust_button">A</string>
+    <string name="unit_button">U</string>
+    <string name="image_button">I</string>
+    <string name="more_button">···</string>
+    
+</resources>

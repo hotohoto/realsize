@@ -1,0 +1,92 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RealSizeActivity" >
+
+    <kr.jollybus.realsize.CanvasView
+        android:id="@+id/canvas_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TableLayout
+        android:id="@+id/result_area_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp" >
+
+        <TableRow>
+            <TextView
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="@string/length_result_label"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/result_length_textview"
+                android:gravity="left"
+                android:padding="3dip"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="@string/size_result_label"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/result_size_textview"
+                android:gravity="left"
+                android:padding="3dip"
+                android:textSize="24sp" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/fullscreen_content_controls"
+        style="?buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@color/black_overlay"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent" >
+
+        <Button
+            android:id="@+id/adjust_button"
+            style="?buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/adjust_button" />
+
+        <Button
+            android:id="@+id/unit_button"
+            style="?buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/unit_button" />
+
+        <Button
+            android:id="@+id/image_button"
+            style="?buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/image_button" />
+
+        <Button
+            android:id="@+id/more_button"
+            style="?buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/more_button" />
+    </LinearLayout>
+
+</FrameLayout>

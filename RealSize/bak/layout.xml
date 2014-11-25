@@ -1,0 +1,6 @@
+    <TextView
+        android:text="@string/length_result_label"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/result_text"
+        android:textSize="50sp"/>
